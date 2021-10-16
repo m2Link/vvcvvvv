@@ -141,8 +141,6 @@ async def cb_handler(bot, update):
 
 @Bot.on_message(filters.private & filters.command(["start"]))
 async def start(bot, update):
-    if not await db.is_user_exist(update.from_user.id):
-	    await db.add_user(update.from_user.id)
     await update.reply_text(
         text=START_TEXT.format(update.from_user.mention),
         disable_web_page_preview=True,
@@ -152,8 +150,6 @@ async def start(bot, update):
 
 @Bot.on_message(filters.private & filters.command(["help"]))
 async def help(bot, update):
-    if not await db.is_user_exist(update.from_user.id):
-	    await db.add_user(update.from_user.id)
     await update.reply_text(
         text=HELP_TEXT,
       	disable_web_page_preview=True,
@@ -163,8 +159,6 @@ async def help(bot, update):
 
 @Bot.on_message(filters.private & filters.command(["about"]))
 async def about(bot, update):
-    if not await db.is_user_exist(update.from_user.id):
-	    await db.add_user(update.from_user.id)
     await update.reply_text(
         text=ABOUT_TEXT.format((await bot.get_me()).username),
         disable_web_page_preview=True,
