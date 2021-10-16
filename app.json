@@ -24,12 +24,12 @@
             "description": "Get this from @BotFather XD",
             "required": true
         },
-        "DATABASE_URL" {
+        "DATABASE_URL": {
                 "description": "Database url 
                 "required": true
         },
         "UPDATE_CHANNEL": {
-               "description": "Update Channel id"
+               "description": "Update Channel id",
                "required": true
         },
         "PIXELDRAIN": {
