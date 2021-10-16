@@ -24,6 +24,14 @@
             "description": "Get this from @BotFather XD",
             "required": true
         },
+        "DATABASE_URL" {
+                "description": "Database url 
+                "required": true
+        },
+        "UPDATE_CHANNEL": {
+               "description": "Update Channel id
+               "required":true
+        },
         "PIXELDRAIN": {
             "description": "Genius Api From Here : https://pixeldrain.com/user/api_keys",
             "required": true
