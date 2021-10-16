@@ -1,0 +1,43 @@
+{
+    "name": "Pixel Drain",
+    "description": "Pixel Drain Video Stemming Bot ",
+    "logo": "https://i.imgur.com/gv2SzKr.jpg",
+    "keywords": [
+        "Telegram",
+        "Bots",
+        "Pixel Drain",
+        "Media Streaming"
+    ],
+    "repository": "https://github.com/m2Link/Pixeldrain-bot",
+    "website": "https://telegram.dog/AmineSoukara",
+    "success_url": "https://t.me/DamienSoukara",
+    "env": {
+        "API_ID": {
+            "description": "Get this value from my.telegram.org",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Get this value from my.telegram.org",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "Get this from @BotFather XD",
+            "required": true
+        },
+        "PIXELDRAIN": {
+            "description": "Genius Api From Here : https://pixeldrain.com/user/api_keys",
+            "required": true
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
