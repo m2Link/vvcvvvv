@@ -21,7 +21,7 @@ Bot = Client(
 @Bot.on_message(filters.private & filters.command("start"))
 async def start(bot, update):
     await update.reply_text(
-        text=f"Hello {update.from_user.mention}, Please send a media for pixeldrain.com stream link.\n\nMade by @FayasNoushad",
+        text=f"Hello {update.from_user.mention},\n\n I'ᴍ Tᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ Sᴛʀᴇᴀᴍɪɴɢ Bᴏᴛ ᴀs ᴡᴇʟʟ Dɪʀᴇᴄᴛ Lɪɴᴋs Gᴇɴᴇʀᴀᴛᴇ \n\n 𝗪𝗔𝗥𝗡𝗜𝗡𝗚 🚸\n🔞 Pʀᴏɴ ᴄᴏɴᴛᴇɴᴛꜱ ʟᴇᴀᴅꜱ ᴛᴏ ᴘᴇʀᴍᴀɴᴇɴᴛ ʙᴀɴ ʏᴏᴜ.\n\n🍃 Bᴏᴛ Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ :@M2Botz",
         disable_web_page_preview=True,
         quote=True
     )
@@ -89,7 +89,7 @@ async def media_filter(bot, update):
                 )
             ],
             [
-                InlineKeyboardButton(text="Join Updates Channel", url="https://telegram.me/FayasNoushad")
+                InlineKeyboardButton(text="Join Updates Channel", url="https://telegram.me/M2Botz")
             ]
         ]
     )
