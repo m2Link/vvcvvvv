@@ -6,8 +6,24 @@
 
 import os
 from pyrogram import Client, filters
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton 
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+import os
+import time
+import math
+import json
+import string
+import random
+import traceback
+import asyncio
+import datetime
+import aiofiles
 import pixeldrain
+from random import choice 
+from pyrogram import Client, filters
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from pyrogram.errors import FloodWait, InputUserDeactivated, UserIsBlocked, PeerIdInvalid, UserNotParticipant, UserBannedInChannel
+from pyrogram.errors.exceptions.bad_request_400 import PeerIdInvalid
+from database import Database
 
 
 Bot = Client(
@@ -56,6 +72,8 @@ ABOUT_TEXT = """--**About Me**-- 😎
 🧰 **Framework :** [Pyrogram](https://pyrogram.org)
 
 📡 **Server :** [Heroku](https://heroku.com)"""
+
+FORCE_SUBSCRIBE_TEXT = "<code>Sorry Dear You Must Join My Updates Channel for using me 😌😉....</code>"
 
 START_BUTTONS = InlineKeyboardMarkup(
         [[
