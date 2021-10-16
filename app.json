@@ -28,6 +28,14 @@
                 "description": "Database url", 
                 "required": true
         },
+        "BROADCAST": {
+             "description": "Broadcast channel",
+             "required": true
+        },
+        "BOT_OWNER": {
+             "description": "Bot owner id",
+             "required": true
+         },
         "UPDATE_CHANNEL": {
                "description": "Update channel id",
                "required": true
