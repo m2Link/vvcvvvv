@@ -8,7 +8,7 @@
         "Pixel Drain",
         "Media Streaming"
     ],
-    "repository": "https://github.com/m2Link/Pixeldrain-bot",
+    "repository": "https://github.com/m2Link/vvcvvvv",
     "website": "https://telegram.dog/AmineSoukara",
     "success_url": "https://t.me/DamienSoukara",
     "env": {
@@ -25,11 +25,11 @@
             "required": true
         },
         "DATABASE_URL": {
-                "description": "Database url 
+                "description": "Database url", 
                 "required": true
         },
         "UPDATE_CHANNEL": {
-               "description": "Update Channel id",
+               "description": "Update channel id",
                "required": true
         },
         "PIXELDRAIN": {
